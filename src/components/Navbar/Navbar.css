@@ -1,0 +1,13 @@
+.navbar-container{
+    border: 1px solid var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    grid-gap: 10px;
+    justify-content: space-between;
+    padding-top: 65px;
+    padding-bottom: 60px;
+}
+
+.navbar-title{
+    font-family: var(--title-font);
+}
