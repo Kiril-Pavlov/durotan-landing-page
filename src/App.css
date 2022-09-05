@@ -5,7 +5,9 @@
 }
 
 :root{
-  --primary-color:red;
+  --primary-color:#928656;
+
+  --gray-color:#999;
 
 
   --title-font: 'Marcellus', serif;

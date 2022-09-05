@@ -1,0 +1,53 @@
+
+.carousel-container{
+    margin: 0px 50px;
+}
+
+.carousel-1-container{
+    padding: 100px 80px;
+}
+
+.small-subtitle{
+    color: var(--primary-color);
+    padding-bottom: 30px;
+}
+
+.carousel-title{
+    font-family: var(--title-font);
+    font-size: 4rem;
+    padding-bottom: 30px;
+}
+
+.carousel-paragraph{
+    color: var(--gray-color);
+    font-size: 1.3rem;
+    padding-bottom: 30px;
+}
+
+.carousel-1-buttons{
+    display: flex;
+    flex-direction: row;
+    grid-gap: 20px;
+}
+
+.carousel-1-button{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    font-weight: 500;
+    border: none;
+}
+
+.play-button{
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.play-button span{
+    font-size: 1.2rem;
+    width: 100px;
+}
+
+
