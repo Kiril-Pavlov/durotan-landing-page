@@ -1,5 +1,7 @@
 
 .carousel-container{
+    position: relative;
+    border: 3px solid red;
     margin: 0px 50px;
 }
 
@@ -48,6 +50,28 @@
 .play-button span{
     font-size: 1.2rem;
     width: 100px;
+}
+
+.carousel-state-buttons{
+    display: flex;
+    align-items: center;
+    color: var(--gray-color);
+    position: absolute;
+    bottom: 30px;
+}
+
+.carousel-state-counter{
+    border: none;
+    background-color: transparent;
+    color: var(--gray-color);
+    padding: 5px 10px;
+    font-size: 1.0rem;
+    transition: all .5s;
+    font-weight: 500;
+}
+
+.carousel-state-counter:hover{
+    color: black;
 }
 
 

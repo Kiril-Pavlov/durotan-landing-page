@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import {AiOutlinePlayCircle} from 'react-icons/ai'
+import { AiOutlinePlayCircle } from 'react-icons/ai'
 import "./Home.css"
 
 const Home = () => {
@@ -37,8 +37,11 @@ const Home = () => {
               <button className='carousel-1-button'>SHOP NOW</button>
               <div className='play-button'><AiOutlinePlayCircle /> <span>VIEW LOOKBOOK</span> </div>
             </div>
-            <button onClick={decrementSliderState}>PREV</button>
-            <button onClick={incrementSliderState}>NEXT</button>
+            <div className='carousel-state-buttons'>
+              <button onClick={decrementSliderState} className="carousel-state-counter">PREV</button>
+              <span>|</span>
+              <button onClick={incrementSliderState} className="carousel-state-counter">NEXT</button>
+            </div>
           </div>
         ) : activeSlide === "2" ? (
           <div>Slider 2
