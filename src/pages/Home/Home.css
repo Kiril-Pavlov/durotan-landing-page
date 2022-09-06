@@ -1,12 +1,37 @@
 
 .carousel-container{
     position: relative;
-    border: 3px solid red;
     margin: 0px 50px;
+    height: 800px;
 }
 
 .carousel-1-container{
     padding: 100px 80px;
+    overflow: hidden;
+}
+
+.slider-1-image{
+    position: absolute;
+    bottom: 0px;
+    right: 10%;
+    height: 90%;
+    z-index: -1;
+}
+
+.slider-2-image{
+    position: absolute;
+    bottom: 25%;
+    right: 10%;
+    height: 50%;
+    z-index: -1;
+}
+
+.slider-3-image{
+    position: absolute;
+    bottom: 30%;
+    right: 10%;
+    height: 40%;
+    z-index: -1;
 }
 
 .small-subtitle{
@@ -18,12 +43,14 @@
     font-family: var(--title-font);
     font-size: 4rem;
     padding-bottom: 30px;
+    width: 400px;
 }
 
 .carousel-paragraph{
     color: var(--gray-color);
     font-size: 1.3rem;
     padding-bottom: 30px;
+    width: 450px;
 }
 
 .carousel-1-buttons{
@@ -40,11 +67,27 @@
     border: none;
 }
 
+.carousel-3-button{
+    background-color: white;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 20px;
+    font-weight: 500;
+}
+
+.carousel-1-button:hover{
+    cursor: pointer;
+}
+
 .play-button{
     font-size: 3rem;
     display: flex;
     align-items: center;
+}
 
+
+.play-button:hover{
+    cursor: pointer;
 }
 
 .play-button span{
@@ -75,3 +118,8 @@
 }
 
 
+.green-price {
+    color: #690;
+    font-size: 48px;
+  }
+  

@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import { AiOutlineSearch, AiOutlineUser, AiOutlineShoppingCart } from 'react-icons/ai'
+
 import "./Navbar.css"
 
 const Navbar = () => {
@@ -30,8 +32,10 @@ const Navbar = () => {
                 <div className='navbar-languages'>
                     EN FR
                 </div>
-                <div className='navbar-user'>
-                    react icons
+                <div className='navbar-icons'>
+                    <AiOutlineSearch />
+                    <AiOutlineUser />
+                    <AiOutlineShoppingCart />
                 </div>
             </nav>
         </div>

@@ -30,3 +30,11 @@
 .navbar-link:hover{
     color: var(--primary-color);
 }
+
+
+.navbar-icons{
+    display: flex;
+    grid-gap: 20px;
+    font-size: 1.3rem;
+    color: var(--gray-color);
+}
