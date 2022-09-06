@@ -1,0 +1,48 @@
+.aboutTitle {
+  font-family: var(--title-font);
+  font-size: 4rem;
+  padding-bottom: 30px;
+}
+.aboutPara {
+  color: var(--gray-color);
+  font-size: 1.3rem;
+  padding-bottom: 30px;
+}
+/* .materials {
+  color: var(--gray-color);
+  font-size: 1.3rem;
+  padding-bottom: 30px;
+} */
+.featuredPara {
+  color: var(--gray-color);
+  font-size: 1.3rem;
+  padding-bottom: 30px;
+}
+.featured {
+  font-family: var(--title-font);
+  font-size: 4rem;
+  padding-bottom: 30px;
+}
+.coats_jackets {
+  color: var(--primary-color);
+  padding-bottom: 30px;
+  background-color: white;
+}
+.text {
+  color: var(--primary-color);
+  padding-bottom: 30px;
+}
+.accessories {
+  background-color: white;
+  padding: 100px 80px;
+}
+.aboutDuratan,
+.featuredCollections,
+.coats_jackets {
+  padding: 100px 80px;
+}
+.materials,
+.freeShipping,
+.securePayment {
+  padding: 100px 80px;
+}
