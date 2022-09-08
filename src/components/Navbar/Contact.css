@@ -1,0 +1,52 @@
+.existing-customers {
+  width: 425px;
+  max-width: 45%;
+  padding: 110px 0 0;
+  display: block;
+}
+.new-customers {
+  width: 425px;
+  max-width: 45%;
+  padding: 110px 0 0;
+  display: block;
+}
+input {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: gray;
+}
+body {
+  line-height: 1.667;
+}
+.contact-customers {
+  display: flex;
+  flex-direction: row;
+  margin: 70px 200px;
+  grid-gap: 400px;
+}
+button {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: white;
+  position: relative;
+  top: 25px;
+  padding: 20px;
+  font-weight: 500;
+}
