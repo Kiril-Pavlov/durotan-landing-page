@@ -4,13 +4,13 @@ import brandNameLogo from "../../../assets/brand-name-logo.png"
 import clothingLogo from "../../../assets/clothing-logo.png"
 import gapLogo from "../../../assets/gap-logo.png"
 import masoreLogo from "../../../assets/masore-logo.png"
-
+import './HomeDropDown.css';
 const HomeDropDown = () => {
     return (
-        <div>
-            <div>
-                <h3>STYLES</h3>
-                <ul>
+        <div className='homeDropdown-container'>
+            <div >
+                <h3 className="dropDownTitle">STYLES</h3>
+                <ul className='dropDownList'>
                     <li>Default</li>
                     <li>Full Width</li>
                     <li>Modern</li>
@@ -24,8 +24,8 @@ const HomeDropDown = () => {
                 </ul>
             </div>
             <div>
-                <h3>TOPIC</h3>
-                <ul>
+                <h3 className="dropDownTitle">TOPIC</h3>
+                <ul className='dropDownList'>
                     <li>Default</li>
                     <li>Full Width</li>
                     <li>Modern</li>
@@ -39,8 +39,8 @@ const HomeDropDown = () => {
                 </ul>
             </div>
             <div>
-                <h3>BRANDS</h3>
-                <div>
+                <h3 className="dropDownTitle">BRANDS</h3>
+                <div className="brands">
                     <img src={brandNameLogo} alt="Brand Name" />
                     <img src={clothingLogo} alt="Clothing" />
                     <img src={gapLogo} alt="GAP" />

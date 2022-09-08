@@ -5,10 +5,12 @@ import PagesDropDown from './menu-drop-lists/PagesDropDown';
 import ShopDropDown from './menu-drop-lists/ShopDropDown';
 import BlogDropDown from './menu-drop-lists/BlogDropDown';
 import ProductDropDown from './menu-drop-lists/ProductDropDown';
-
+import Cart from "../../pages/Cart/Cart";
+import Search from "../Search/Search";
 import { AiOutlineSearch, AiOutlineUser, AiOutlineShoppingCart } from 'react-icons/ai'
 
 import "./Navbar.css"
+
 
 const Navbar = () => {
     const [openHome, setOpenHome] = useState(false);
@@ -17,7 +19,8 @@ const Navbar = () => {
     const [openPages, setOpenPages] = useState(false);
     const [openProducts, setOpenProducts] = useState(false);
     const [openCart, setOpenCart] = useState(false);
- 
+    const [openSearch, setOpenSearch] = useState(false);
+    
 
 
     function handleOpenHome() {
@@ -56,6 +59,9 @@ const Navbar = () => {
     function handleCloseCart() {
         setOpenCart(!openCart);
     }
+    function handleSearchClick() {
+        setOpenSearch(true)
+    }
     return (
         <div>
             <nav className='navbar-container'>
@@ -83,13 +89,17 @@ const Navbar = () => {
                     EN FR
                 </div>
                 <div className='navbar-icons'>
-                    <AiOutlineSearch />
+                    <AiOutlineSearch className="navbar-searchBtn"onClick={() => handleSearchClick()} />
+                    
                     
                     <Link to="/contact" className='navbar-link'>
                     <AiOutlineUser />
                     </Link>
-                    
+
+                    <Link to="/pages" className='navbar-link' onMouseEnter={handleOpenCart} onMouseLeave={handleCloseCart}>
                     <AiOutlineShoppingCart />
+                    </Link>
+                    
                 </div>
             </nav>
             {openHome && <HomeDropDown />}
@@ -97,6 +107,8 @@ const Navbar = () => {
             {openShop && <ShopDropDown />}
             {openBlog && <BlogDropDown />}
             {openPages && <PagesDropDown />}
+            {openCart && <Cart />}
+             <Search closeSearch={()=>setOpenSearch(false)} openSearchState={openSearch} />
         </div>
     )
 }

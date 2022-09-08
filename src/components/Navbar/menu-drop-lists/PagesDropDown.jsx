@@ -2,8 +2,8 @@ import React from 'react'
 
 const PagesDropDown = () => {
     return (
-        <div>
-            <ul className='pages'>
+        <div className='pages-dropdown-container'>
+            <ul className='dropDownList'>
                 <li>404 Page</li>
                 <li>About</li>
                 <li>Cart</li>

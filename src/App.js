@@ -7,8 +7,10 @@ import Blog from "./pages/Blog/Blog";
 import Shop from "./pages/Shop/Shop";
 import Pages from "./pages/Pages/Pages";
 import Products from "./pages/Product/Products";
+import Cart from "./pages/Cart/Cart";
 import Footer from "./components/Footer/Footer";
 import { Route, Routes, Navigate } from "react-router";
+import Search from "./components/Search/Search";
 
 function App() {
   return (
@@ -21,7 +23,9 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/pages" element={<Pages />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path='/cart' element={<Cart />} />
       </Routes>
+      <Search/>
       <Footer />
     </div>
   );
