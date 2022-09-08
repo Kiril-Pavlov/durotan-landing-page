@@ -1,6 +1,6 @@
 import React from 'react'
 
-import shopDropImg from "../../../assets/shop-drop-img.png"
+// import shopDropImg from "../../../assets/shop-drop-img.png"
 
 const ShopDropDown = () => {
   return (
@@ -65,7 +65,7 @@ const ShopDropDown = () => {
                     <li>Shopable</li>
                 </ul>
             </div>
-            <img src={shopDropImg} alt="Shop Drop" />
+            {/* <img src={shopDropImg} alt="Shop Drop" /> */}
     </div>
   )
 }
