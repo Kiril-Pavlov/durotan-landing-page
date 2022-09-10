@@ -122,4 +122,9 @@
     color: #690;
     font-size: 48px;
   }
+
+  .product-journal-instagram-wrapper{
+    background-color: white;
+    border-bottom: 1px solid var(--gray-color);
+  }
   

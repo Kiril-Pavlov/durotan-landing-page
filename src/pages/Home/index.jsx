@@ -130,12 +130,12 @@ const Home = () => {
           </div>
         ) : null}
       </div>
-      <About/>
-
-      <OurProducts />
-      <OurJournal/>
-      <OurInstagram />
-     
+      <About />
+      <div className="product-journal-instagram-wrapper">
+        <OurProducts />
+        <OurJournal />
+        <OurInstagram />
+      </div>
     </div>
   );
 };

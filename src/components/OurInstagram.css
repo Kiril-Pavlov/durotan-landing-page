@@ -1,3 +1,83 @@
-.followOurInsta {
-  padding: 100px 80px;
+.instagram-container{
+  margin: 100px 15%;
+  border-top: 1px solid var(--primary-color);
+}
+
+.instagram-title {
+  font-family: var(--title-font);
+  font-size: 1.8rem;
+  padding-top: 100px;
+}
+
+.instagram-container a {
+  color: black;
+  font-weight: 500;
+}
+
+.instagram-container a:hover{
+  color: var(--primary-color);
+}
+
+.instagram-image-container{
+  display: flex;
+  flex-direction: row;
+  grid-gap: 10px;
+  padding: 30px 0px;
+}
+
+.instagram-image{
+  position: relative;
+  display: flex;
+  max-width: max-content;
+}
+
+
+.instagram-image img{
+  position: relative;
+  z-index: 10;
+}
+
+.instagram-image img:hover{
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.instagram-hover{
+  width: 226px;
+  height: 226px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  position: absolute;
+  top: 0px;
+  z-index: 5;
+}
+
+.insta-icon{
+  padding: 100%;
+}
+
+@media screen and (max-width:992px) {
+  .instagram-container{
+    margin: 50px 5%;
+  }
+
+  .instagram-image{
+    /* transform: scale(0.8); */
+  }
+
+  .instagram-image:nth-child(5){
+    visibility: hidden;
+  }  
+}
+
+@media screen and (max-width:767px) {
+  .instagram-image:nth-child(4){
+    visibility: hidden;
+  }  
 }

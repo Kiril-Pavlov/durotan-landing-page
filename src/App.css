@@ -4,6 +4,11 @@
   margin: 0px;
 }
 
+body{
+  width: 100%;
+  overflow-x: hidden;
+}
+
 :root{
   --primary-color:#928656;
 
