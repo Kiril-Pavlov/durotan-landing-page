@@ -67,9 +67,9 @@
     margin: 50px 5%;
   }
 
-  .instagram-image{
-    /* transform: scale(0.8); */
-  }
+  /* .instagram-image{
+    transform: scale(0.8);
+  } */
 
   .instagram-image:nth-child(5){
     visibility: hidden;

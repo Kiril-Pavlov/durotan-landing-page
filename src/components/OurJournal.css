@@ -1,5 +1,113 @@
+.journal-container{
+  margin: 0px 15%;
+  padding: 100px 0px;
+  border-top: 1px solid var(--primary-color);
+}
+
 .ourJournal {
-    font-family: var(--title-font);
+  font-family: var(--title-font);
+  font-size: 3rem;
+  padding-bottom: 20px;
+}
+
+.journal-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.posts-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.post-container{
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px;
+}
+
+.post-image img{
+  width: 100%;
+}
+
+.post-content{
+  grid-gap: 30px;
+}
+
+.post-date{
+  display: flex;
+  flex-direction: column;
+}
+
+.post-day{
+  font-family: var(--title-font);
   font-size: 4rem;
-  padding-bottom: 30px;
+  margin-top: -15px;
+}
+
+.post-month{
+  text-transform: uppercase;
+}
+
+.post-content{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.post-author{
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width:992px) {
+  .journal-container{
+    margin: 0px 5%;
+    padding: 40px 0px;
+  }
+
+  .ourJournal {
+    font-size: 2rem;
+    padding-bottom: 15px;
+  }
+
+  .posts-container{
+    grid-template-columns: 1fr;
+  }
+
+  .all-articles-link{
+    display: none;
+  }
+
+  .post-date{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .post-day{
+    font-family: var(--title-font);
+    font-size: 4rem;
+    margin-top: -15px;
+  }
+  
+  .post-month{
+    text-transform: uppercase;
+  }
+
+  .post-date{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .post-day{
+    font-family: var(--title-font);
+    font-size: 3rem;
+    margin-top: -15px;
+  }
+  
+  .post-month{
+    text-transform: uppercase;
+  }
 }
