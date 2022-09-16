@@ -1,4 +1,4 @@
-.journal-container{
+.journal-container {
   margin: 0px 15%;
   padding: 100px 0px;
   border-top: 1px solid var(--primary-color);
@@ -10,60 +10,59 @@
   padding-bottom: 20px;
 }
 
-.journal-content{
+.journal-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.posts-container{
+.posts-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
 }
 
-.post-container{
+.post-container {
   display: flex;
   flex-direction: column;
   grid-gap: 30px;
 }
 
-.post-image img{
+.post-image img {
   width: 100%;
 }
 
-.post-content{
+.post-content {
   grid-gap: 30px;
 }
 
-.post-date{
+.post-date {
   display: flex;
   flex-direction: column;
 }
 
-.post-day{
+.post-day {
   font-family: var(--title-font);
   font-size: 4rem;
   margin-top: -15px;
 }
 
-.post-month{
+.post-month {
   text-transform: uppercase;
 }
 
-.post-content{
+.post-content {
   display: flex;
   flex-direction: row;
 }
 
-
-.post-author{
+.post-author {
   display: flex;
   flex-direction: column;
 }
 
-@media screen and (max-width:992px) {
-  .journal-container{
+@media screen and (max-width: 992px) {
+  .journal-container {
     margin: 0px 5%;
     padding: 40px 0px;
   }
@@ -73,41 +72,41 @@
     padding-bottom: 15px;
   }
 
-  .posts-container{
+  .posts-container {
     grid-template-columns: 1fr;
   }
 
-  .all-articles-link{
+  .all-articles-link {
     display: none;
   }
 
-  .post-date{
+  .post-date {
     display: flex;
     flex-direction: column;
   }
-  
-  .post-day{
+
+  .post-day {
     font-family: var(--title-font);
     font-size: 4rem;
     margin-top: -15px;
   }
-  
-  .post-month{
+
+  .post-month {
     text-transform: uppercase;
   }
 
-  .post-date{
+  .post-date {
     display: flex;
     flex-direction: column;
   }
-  
-  .post-day{
+
+  .post-day {
     font-family: var(--title-font);
     font-size: 3rem;
     margin-top: -15px;
   }
-  
-  .post-month{
+
+  .post-month {
     text-transform: uppercase;
   }
 }

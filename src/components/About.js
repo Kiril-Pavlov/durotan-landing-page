@@ -81,7 +81,7 @@ const About = () => {
           <img src={beltPart} />
         </div>
       </div>
-      <div className="featuredCollections">
+      {/* <div className="featuredCollections">
         <h4 className="featured">Featured Collections</h4>
         <p className="featuredPara">
           New arrivals, best seling or any discount programs, click on any
@@ -113,7 +113,7 @@ const About = () => {
         </p>
         <img src={product2} style={{ width: "400px" }}/>
         <button classname="explore">EXPLORE NOW</button>
-      </div>
+      </div> */}
     </div>
   );
 };
