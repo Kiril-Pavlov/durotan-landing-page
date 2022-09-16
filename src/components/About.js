@@ -81,7 +81,7 @@ const About = () => {
           <img src={beltPart} />
         </div>
       </div>
-      {/* <div className="featuredCollections">
+      <div className="featuredCollections">
         <h4 className="featured">Featured Collections</h4>
         <p className="featuredPara">
           New arrivals, best seling or any discount programs, click on any
@@ -94,7 +94,7 @@ const About = () => {
         <p className="text">
           Simple alway is the best choice for your any style. Check our lookbook
         </p>
-        <img src={product1} />
+        <img src={product1} style={{ width: "400px" }} />
         <button classname="explore">EXPLORE NOW</button>
       </div>
       <div
@@ -111,9 +111,9 @@ const About = () => {
           Inspiration from Athletic Crew - College Division, A brown cap for
           youngs
         </p>
-        <img src={product2} />
+        <img src={product2} style={{ width: "400px" }}/>
         <button classname="explore">EXPLORE NOW</button>
-      </div> */}
+      </div>
     </div>
   );
 };

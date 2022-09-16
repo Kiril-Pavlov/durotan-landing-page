@@ -1,1 +1,10 @@
-
+.table {
+  position: relative;
+  left: 200px;
+  top: 50px;
+  width: 1000px;
+  margin: 90px;
+}
+.discount{
+    border:1px solid gray;
+}

@@ -2,8 +2,8 @@ import React from "react";
 import "./OurProducts.css";
 const OurProducts = () => {
   return (
-    <div>
-      <h2 className="ourProducts">Our Products</h2>
+    <div className="ourProducts" style={{padding: '100px 80px'}}>
+      <h2 className="ourProducts-title">Our Products</h2>
     </div>
   );
 };

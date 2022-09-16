@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-
 import About from "../../components/About";
 import OurProducts from "../../components/OurProducts";
 import OurInstagram from "../../components/OurInstagram";
 import OurJournal from "../../components/OurJournal";
-import Hero from "../../components/Hero";
+
+// import Hero from "../../components/Hero";
 import slider1Image from "../../assets/slider-1-image.png";
 import slider2Image from "../../assets/slider-2-image.png";
 import slider3Image from "../../assets/slider-3-image.png";
@@ -36,7 +36,7 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      {/* <div className="carousel-container">
+      <div className="carousel-container">
         {activeSlide === "1" ? (
           <div className="carousel-1-container">
             <h4 className="small-subtitle">NEW ARRIVAL</h4>
@@ -129,8 +129,9 @@ const Home = () => {
             <img src={slider3Image} alt="" className="slider-3-image" />
           </div>
         ) : null}
-      </div> */}
-      <Hero />
+      </div>
+      {/* <Hero /> */}
+ 
       <About />
       <div className="product-journal-instagram-wrapper">
         <OurProducts />

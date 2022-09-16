@@ -15,7 +15,7 @@ import Search from "./components/Search/Search";
 function App() {
   return (
     <div className="App">
-      {/* <Navbar /> */}
+       <Navbar /> 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />

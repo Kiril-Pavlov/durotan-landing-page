@@ -1,5 +1,8 @@
-.ourProducts{
-    font-family: var(--title-font);
-    font-size: 4rem;
-    padding-bottom: 30px;
+.ourProducts {
+  font-family: var(--title-font);
+  font-size: 3rem;
+  padding-bottom: 30px;
+  margin-left: 6%;
+  overflow: hidden;
+  background-color: white;
 }
