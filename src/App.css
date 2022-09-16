@@ -1,19 +1,20 @@
-*{
+* {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
+  
 }
 
-body{
+body {
   width: 100%;
   overflow-x: hidden;
+  background-color: rgb(242, 232, 232);
 }
 
-:root{
-  --primary-color:#928656;
+:root {
+  --primary-color: #928656;
 
-  --gray-color:#999;
+  --gray-color: #999;
 
-
-  --title-font: 'Marcellus', serif;
+  --title-font: "Marcellus", serif;
 }

@@ -7,6 +7,7 @@ import search4 from "../../assets/search4.jpg";
 import search5 from "../../assets/search5.jpg";
 const Search = ({ closeSearch, openSearchState }) => {
   if (!openSearchState) return null;
+  
   const searchList = [
     {
       image: search1,
@@ -52,9 +53,9 @@ const Search = ({ closeSearch, openSearchState }) => {
         type="search"
         className="searchInput"
         placeholder="Search here ..."
-          ></input>
-          <h3 className="sub-title">Search Results</h3>
-      <div className='cards-container'>
+      ></input>
+      <h3 className="sub-title">Search Results</h3>
+      <div className="cards-container">
         {searchList.map((item) => {
           return (
             <div className="cardItem" key={item.text}>
@@ -64,8 +65,8 @@ const Search = ({ closeSearch, openSearchState }) => {
             </div>
           );
         })}
-          </div>
-          <button className="popUpBtn">ALL RESULTS (12)</button>
+      </div>
+      <button className="popUpBtn">ALL RESULTS (12)</button>
     </div>
   );
 };
