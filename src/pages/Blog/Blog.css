@@ -1,3 +1,23 @@
-h1{
+h1 {
+  text-align: center;
+  padding-top: 100px;
+}
+.blogSearch {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  grid-gap: 40px;
+  text-transform: uppercase;
+  padding: 40px;
+  justify-content: flex-start;
+  margin-left: 240px;
+  text-transform: uppercase;
+}
+img {
+  position: relative;
+  left: 150px;
+  padding-top: 60px;
+}
+p{
     text-align: center;
 }
