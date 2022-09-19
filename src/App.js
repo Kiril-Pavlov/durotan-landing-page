@@ -15,17 +15,23 @@ import Search from "./components/Search/Search";
 function App() {
   return (
     <div className="App">
-       {/* <Navbar />  */}
+      {/* <Navbar /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/products" element={<Products />} />
         <Route path="/pages" element={<Pages />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path='/cart' element={<Cart />} />
+
+        <Route
+          path="/contact"
+          element={<Contact />}
+          style={{ backgroundColor: "white" }}
+        />
+
+        <Route path="/cart" element={<Cart />} />
       </Routes>
-      <Search/>
+      <Search />
       <Footer />
     </div>
   );
