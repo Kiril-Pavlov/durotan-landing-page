@@ -14,6 +14,12 @@ h1 {
   text-transform: uppercase;
 }
 
+<<<<<<< HEAD
 p {
   text-align: center;
+=======
+
+p{
+    text-align: center;
+>>>>>>> 094ef324764f3798ec97e809067864a9963923e3
 }

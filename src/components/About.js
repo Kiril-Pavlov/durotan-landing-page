@@ -9,8 +9,6 @@ import gapImg from "../assets/gap-logo.png";
 import masoreImg from "../assets/masore-logo.png";
 import supraImg from "../assets/supra.png";
 import belt from "../assets/belt.png";
-import product1 from "../assets/featured_product_1.png";
-import product2 from "../assets/featured_product_2.png";
 import beltPart from "../assets/belt2.png";
 
 const About = () => {
@@ -81,39 +79,6 @@ const About = () => {
           <img src={beltPart} />
         </div>
       </div>
-      {/* <div className="featuredCollections">
-        <h4 className="featured">Featured Collections</h4>
-        <p className="featuredPara">
-          New arrivals, best seling or any discount programs, click on any
-          collection that you’re looking for
-        </p>
-      </div>
-      <div className="coats-jackets" style={{ backgroundColor: "white" }}>
-        <h4 className="coats_jackets">COATS & JACKETS</h4>
-        <h1 classname="basicJackets">BASIC JACKETS</h1>
-        <p className="text">
-          Simple alway is the best choice for your any style. Check our lookbook
-        </p>
-        <img src={product1} style={{ width: "400px" }} />
-        <button classname="explore">EXPLORE NOW</button>
-      </div>
-      <div
-        className="accessories"
-        style={{
-          position: "relative",
-          bottom: "880px",
-          left: "800px",
-        }}
-      >
-        <h4 className="coats_jackets">ACCESSORIES</h4>
-        <h1 classname="basicJackets">ATHLETIC CREW</h1>
-        <p className="text">
-          Inspiration from Athletic Crew - College Division, A brown cap for
-          youngs
-        </p>
-        <img src={product2} style={{ width: "400px" }}/>
-        <button classname="explore">EXPLORE NOW</button>
-      </div> */}
     </div>
   );
 };

@@ -1,0 +1,171 @@
+.featuredCollections{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 6%;
+    padding: 120px 0px 80px 120px;
+}
+
+.featured-title {
+    font-family: var(--title-font);
+    font-size: 3rem;
+    padding-bottom: 30px;
+}
+
+.featuredPara {
+    color: var(--gray-color);
+    font-size: 1rem;
+    text-align: left;
+}
+
+.featured-products{
+    margin: 0% 6%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
+    margin-bottom: 100px;
+}
+
+.featured-product{
+    position: relative;
+    color: var(--primary-color);
+    padding: 50px;
+    background-color: white;
+    height: 500px;
+    overflow: hidden;
+}
+
+.featured-product-small-title{
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.featured-product-title{
+    position: relative;
+    text-align: left;
+    font-size: 3rem;
+    font-family: var(--title-font);
+    color: black;
+}
+
+.featured-product-paragraph{
+    position: relative;
+    text-align: left;
+    color: var(--gray-color);
+    width: 50%;
+}
+
+.featured-product-image{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+}
+
+.featured-product-image:hover{
+    transform: scale(1.2) translateX(-50px);
+    
+}
+
+.featured-product-image img{
+    position: absolute;
+    height: 500px;
+    right: 0px;
+}
+
+.featured-product-image-2{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+}
+
+.featured-product-image-2:hover{
+    transform: scale(1.2) translateX(-50px); 
+}
+
+.featured-product-image-2 img{
+    position: absolute;
+    height: 500px;
+    right: -250px;
+}
+
+.explore{
+   position: absolute;
+   top: 80%;
+   background-color: transparent;
+   border: 3px solid var(--primary-color);
+   color: var(--primary-color);
+   z-index: 0;
+   transition: all .5s;
+}
+
+.explore:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+@media screen and (max-width:992px){
+    .featuredCollections{
+        padding: 60px 0px 40px 60px;
+    }
+    
+    .featured-title {
+        font-size: 2rem;
+        padding-bottom: 20px;
+        margin: 0px;
+    }
+    
+    .featuredPara {
+        color: var(--gray-color);
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .featured-products{
+        grid-template-columns:1fr;
+        grid-gap: 20px;
+        margin-bottom: 50px;
+    }
+
+    .featured-product-title{
+        width: 50%;
+        line-height: 1;
+    }
+
+    .featured-product-paragraph{
+        display: none;
+    }
+    
+    .featured-product-image img{
+        position: absolute;
+        height: 500px;
+        right: -160px;
+    }
+    
+    .featured-product-image-2{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        transition: all .5s;
+    }
+    
+    .featured-product-image-2:hover{
+        transform: scale(1.2) translateX(-50px); 
+    }
+    
+    .featured-product-image-2 img{
+        position: absolute;
+        height: 250px;
+        top: 100px;
+        right: -150px;
+    }
+}
+
+
+
