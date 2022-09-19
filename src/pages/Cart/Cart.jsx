@@ -24,7 +24,7 @@ const Cart = () => {
       </table>
       <div style={{ height: "120px" }} className="discount table ">
         <h3> Discount code</h3>
-        
+
         <input type="text" placeholder="Enter promo code"></input>
         <button
           style={{
@@ -32,7 +32,7 @@ const Cart = () => {
             color: "black",
             border: "none",
             position: "absolute",
-            right: "0px"
+            right: "0px",
           }}
           className="apply"
         >
