@@ -1,0 +1,219 @@
+.product-links {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  padding: 100px 0px 20px 0px;
+}
+.product-container {
+  background-color: white;
+  padding: 0px 6%;
+}
+.prevNext {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 40px;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 50px;
+}
+.hoverMe {
+  opacity: 0.5;
+}
+.card-group {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+}
+.original {
+  width: 100%;
+}
+
+.colored {
+  background-color: #ffbb05;
+  border-radius: 20px;
+}
+.pink {
+  border-radius: 30px;
+  background-color: pink;
+  width: 20px;
+  height: 20px;
+}
+.red {
+  border-radius: 30px;
+  background-color: red;
+  width: 20px;
+  height: 20px;
+}
+.black {
+  border-radius: 30px;
+  background-color: black;
+  width: 20px;
+  height: 20px;
+}
+.green {
+  border-radius: 30px;
+  background-color: rgb(20, 68, 18);
+  width: 20px;
+  height: 20px;
+}
+.parentColorSelector {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 10px;
+}
+.colorPicker {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  grid-gap: 200px;
+  justify-content: space-between;
+  border-top: 1px solid var(--gray-color);
+  padding: 20px 0px;
+}
+.selectProductDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  border-bottom: 1px solid gray;
+  padding-bottom: 50px;
+}
+.rightPart {
+  border: green;
+}
+.leftPart {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 20px;
+}
+.brown {
+  color: var(--gray-color);
+  margin: 0;
+}
+.status {
+  padding: 20px 0px;
+  color: var(--gray-color);
+}
+.stars {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 10px;
+}
+.select {
+  width: 100%;
+  padding: 15px;
+}
+.counter {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 10px;
+  border: 1px solid gray;
+  align-items: center;
+}
+.qnt {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+  margin: 20px 0px;
+}
+.counter button {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: gray;
+  position: relative;
+  top: 0px;
+  width: 33%;
+  font-size: 1.6rem;
+}
+.counter input {
+  border: none;
+  width: 33%;
+  text-align: center;
+}
+.qnt .cart {
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+  width: 100%;
+  transition: all 0.5s;
+  position: relative;
+  top: 0px;
+}
+.qnt .cart:hover {
+  background-color: black;
+  color: white;
+}
+.selectInstructions {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px 0px;
+}
+.selectInstruction {
+  border-right: 1px solid gray;
+  padding-right: 20px;
+}
+.productInfo {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 20px;
+  padding: 20px 0px;
+  border-top: 1px solid gray;
+  color: gray;
+}
+.productInfoColumn {
+  color: black;
+}
+.socialIcons {
+  padding: 20px 0px;
+}
+.inline {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 20px;
+  padding: 20px 0px;
+  flex-wrap: wrap;
+}
+.question:hover {
+  border-bottom: 1px solid black;
+}
+.outfit img {
+  height: 300px;
+}
+.outfit {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 20px;
+}
+.outfit p {
+  text-align: left;
+  width: 200px;
+}
+.imgItem {
+  width: 200px;
+}
+.grid-products-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid-product-card:nth-child(odd) .price {
+  color: red;
+  border: none;
+}
+.grid-product-card:nth-child(odd) .discount {
+  border: none;
+  text-decoration: line-through;
+}
+.grid-product-card:nth-child(even) .discount {
+  border: none;
+}
+.reviewProducts {
+  background-color: rgb(225, 219, 219);
+}
+
+
+
+

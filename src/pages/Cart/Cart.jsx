@@ -1,5 +1,8 @@
 import React from "react";
 import "./Cart.css";
+import cart1 from "../../assets/cart1.jpg";
+import cart2 from "../../assets/cart2.jpg";
+import cart3 from "../../assets/cart3.jpg";
 const Cart = () => {
   return (
     <div>
@@ -15,10 +18,31 @@ const Cart = () => {
         </thead>
         <tbody>
           <tr>
-            <th scope="row">1</th>
-            <td></td>
-            <td></td>
-            <td></td>
+            <th scope="row">
+              <img style={{ width: "100px" }} src={cart1}></img>
+            </th>
+            <td>$56.99</td>
+            <td>2</td>
+            <td>$113.98</td>
+            <td>X</td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <img style={{ width: "100px" }} src={cart2}></img>
+            </th>
+            <td>$45.5</td>
+            <td>1</td>
+            <td>$45.5</td>
+            <td>X</td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <img style={{ width: "100px" }} src={cart3}></img>
+            </th>
+            <td>$72.99</td>
+            <td>1</td>
+            <td>$72.99</td>
+            <td>X</td>
           </tr>
         </tbody>
       </table>
