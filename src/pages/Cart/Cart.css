@@ -49,7 +49,6 @@
   border: none;
   color: black;
   position: relative;
-<<<<<<< HEAD
   left: 200px;
   top: 50px;
   width: 1000px;
@@ -57,7 +56,6 @@
 }
 .discount {
   border: 1px solid gray;
-=======
   top: 0px;
 }
 
@@ -133,5 +131,4 @@
     grid-template-columns: 1fr;
     grid-gap: 2%;
   }
->>>>>>> 2e31db86a377973302771c02e47dd81994f648bd
 }

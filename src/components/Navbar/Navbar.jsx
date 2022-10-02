@@ -1,10 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import HomeDropDown from "./menu-drop-lists/HomeDropDown";
-import PagesDropDown from "./menu-drop-lists/PagesDropDown";
-import ShopDropDown from "./menu-drop-lists/ShopDropDown";
-import BlogDropDown from "./menu-drop-lists/BlogDropDown";
-import ProductDropDown from "./menu-drop-lists/ProductDropDown";
 import Cart from "../../pages/Cart/Cart";
 import Search from "../Search/Search";
 import {
@@ -12,48 +7,18 @@ import {
   AiOutlineUser,
   AiOutlineShoppingCart,
 } from "react-icons/ai";
-
+import Dropdown from "react-bootstrap/Dropdown";
 import "./Navbar.css";
+import brandNameLogo from "..//../assets/brand-name-logo.png";
+import clothingLogo from "..//../assets/clothing-logo.png";
+import gapLogo from "..//../assets/gap-logo.png";
+import masoreLogo from "..//../assets/masore-logo.png";
+import shopImg from "..//../assets/shop-drop-img.jpg";
 
 const Navbar = () => {
-  const [openHome, setOpenHome] = useState(false);
-  const [openShop, setOpenShop] = useState(false);
-  const [openBlog, setOpenBlog] = useState(false);
-  const [openPages, setOpenPages] = useState(false);
-  const [openProducts, setOpenProducts] = useState(false);
   const [openCart, setOpenCart] = useState(false);
   const [openSearch, setOpenSearch] = useState(false);
 
-  function handleOpenHome() {
-    setOpenHome(!openHome);
-  }
-  function handleCloseHome() {
-    setOpenHome(!openHome);
-  }
-  function handleOpenShop() {
-    setOpenShop(!openShop);
-  }
-  function handleCloseShop() {
-    setOpenShop(!openShop);
-  }
-  function handleOpenProducts() {
-    setOpenProducts(!openProducts);
-  }
-  function handleCloseProducts() {
-    setOpenProducts(!openProducts);
-  }
-  function handleOpenBlog() {
-    setOpenBlog(!openBlog);
-  }
-  function handleCloseBlog() {
-    setOpenBlog(!openBlog);
-  }
-  function handleOpenPages() {
-    setOpenPages(!openPages);
-  }
-  function handleClosePages() {
-    setOpenPages(!openPages);
-  }
   function handleOpenCart() {
     setOpenCart(!openCart);
   }
@@ -63,79 +28,495 @@ const Navbar = () => {
   function handleSearchClick() {
     setOpenSearch(true);
   }
-  return (
-    <div>
-      <nav className="navbar-container">
-        <h1 className="navbar-title">DUROTAN</h1>
+
+  {
+    /* <nav className="navbar-container">
+        
         <div className="navbar-links">
-          <Link
-            to="/"
-            className="navbar-link"
-            onMouseEnter={handleOpenHome}
-            onMouseLeave={handleCloseHome}
-          >
-            Home
-          </Link>
-          <Link
-            to="/shop"
-            className="navbar-link"
-            onMouseEnter={handleOpenShop}
-            onMouseLeave={handleCloseShop}
-          >
-            Shop
-          </Link>
-          <Link
-            to="/products"
-            className="navbar-link"
-            onMouseEnter={handleOpenProducts}
-            onMouseLeave={handleCloseProducts}
-          >
-            Product
-          </Link>
-          <Link
-            to="/blog"
-            className="navbar-link"
-            onMouseEnter={handleOpenBlog}
-            onMouseLeave={handleCloseBlog}
-          >
-            Blog
-          </Link>
-          <Link
-            to="/pages"
-            className="navbar-link"
-            onMouseEnter={handleOpenPages}
-            onMouseLeave={handleClosePages}
-          >
-            Pages
-          </Link>
+         
+   
+       
+         
+         
         </div>
-        <div className="navbar-languages">EN FR</div>
-        <div className="navbar-icons">
-          <AiOutlineSearch
-            className="navbar-searchBtn"
-            onClick={() => handleSearchClick()}
-          />
-
-          <Link to="/contact" className="navbar-link">
-            <AiOutlineUser />
-          </Link>
-
-          <Link to="/cart" className="navbar-link">
-            <AiOutlineShoppingCart />
-          </Link>
-        </div>
-      </nav>
-      {openHome && <HomeDropDown />}
-      {openProducts && <ProductDropDown />}
-      {openShop && <ShopDropDown />}
-      {openBlog && <BlogDropDown />}
-      {openPages && <PagesDropDown />}
+       
+        </nav>
+     
       {openCart && <Cart />}
+    */
+  }
+
+  return (
+    <nav className="navbar-container">
+      <div className="navbar-title">DUROTAN </div>
+      <div className="navbar-links">
+        <Dropdown className="d-inline mx-2 ">
+          <Dropdown.Toggle
+            id="dropdown-autoclose-true "
+            style={{
+              backgroundColor: "transparent",
+              border: "none",
+              position: "relative",
+              top: 0,
+            }}
+          >
+            {" "}
+            <Link to="/" className="navbar-link">
+              Home
+            </Link>
+          </Dropdown.Toggle>
+          <Dropdown.Menu
+            style={{
+              width: "1000px",
+            }}
+          >
+            <div className="homeDropdown-container">
+              <div className="dropDownContainer">
+                <div>
+                  <Dropdown.Item>
+                    {" "}
+                    <h3>STYLES</h3>
+                  </Dropdown.Item>
+
+                  <ul>
+                    <Dropdown.Item href="#">
+                      <li>Default</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Full Width</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Full Width</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Modern</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Collections</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Dark skin </li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Classic</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Best selling</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Sidebar</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Minibal</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Shopable</li>
+                    </Dropdown.Item>
+                  </ul>
+                </div>
+                <div>
+                  <Dropdown.Item>
+                    {" "}
+                    <h3>TOPIC</h3>
+                  </Dropdown.Item>
+
+                  <ul>
+                    <Dropdown.Item href="#">
+                      <li>Default</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Full Width</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Full Width</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Modern</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Collections</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Dark skin </li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Classic</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Best selling</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Sidebar</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Minibal</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Shopable</li>
+                    </Dropdown.Item>
+                  </ul>
+                </div>
+                <div>
+                  <Dropdown.Item>
+                    {" "}
+                    <h3>BRANDS</h3>
+                  </Dropdown.Item>
+
+                  <div>
+                    <Dropdown.Item href="#">
+                      <div className="brands">
+                        <img src={brandNameLogo} />
+                        <img src={clothingLogo} />
+                        <img src={gapLogo} />
+                        <img src={masoreLogo} />
+                      </div>
+                    </Dropdown.Item>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Dropdown.Menu>
+        </Dropdown>
+
+        <Dropdown className="d-inline mx-2">
+          <Dropdown.Toggle
+            id="dropdown-autoclose-true"
+            style={{
+              backgroundColor: "transparent",
+              border: "none",
+              position: "relative",
+              top: 0,
+            }}
+          >
+            {" "}
+            <Link to="/shop" className="navbar-link">
+              Shop
+            </Link>
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu
+            style={{
+              width: "1000px",
+            }}
+          >
+            <div className="homeDropdown-container">
+              <div className="shopDropdown-container">
+                <div>
+                  <Dropdown.Item>
+                    {" "}
+                    <h3>SHOP</h3>
+                  </Dropdown.Item>
+
+                  <ul>
+                    <Dropdown.Item href="#">
+                      <li>Default</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Full Width</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Full Width</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Modern</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Collections</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Dark skin </li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Classic</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Best selling</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Sidebar</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Minibal</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Shopable</li>
+                    </Dropdown.Item>
+                  </ul>
+                </div>
+                <div>
+                  <Dropdown.Item>
+                    {" "}
+                    <h3>PRODUCT LAYOUT</h3>
+                  </Dropdown.Item>
+
+                  <ul>
+                    <Dropdown.Item href="#">
+                      <li>Default</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Full Width</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Full Width</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Modern</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Collections</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Dark skin </li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Classic</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Best selling</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Sidebar</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Minibal</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Shopable</li>
+                    </Dropdown.Item>
+                  </ul>
+                </div>
+                <div>
+                  <Dropdown.Item>
+                    {" "}
+                    <h3>PRODUCT TYPES</h3>
+                  </Dropdown.Item>
+
+                  <ul>
+                    <Dropdown.Item href="#">
+                      <li>Default</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Full Width</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Full Width</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Modern</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Collections</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Dark skin </li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Classic</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Best selling</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Sidebar</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Minibal</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Shopable</li>
+                    </Dropdown.Item>
+                  </ul>
+                </div>
+                <div>
+                  <Dropdown.Item>
+                    {" "}
+                    <h3>OTHERS</h3>
+                  </Dropdown.Item>
+
+                  <ul>
+                    <Dropdown.Item href="#">
+                      <li>Default</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Full Width</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Full Width</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Modern</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Collections</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Dark skin </li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Classic</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Best selling</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Sidebar</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Minibal</li>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#">
+                      <li>Shopable</li>
+                    </Dropdown.Item>
+                  </ul>
+                </div>
+                <div className="imageShop">
+                  <img src={shopImg} className="shopImg" />
+                </div>
+              </div>
+            </div>
+          </Dropdown.Menu>
+        </Dropdown>
+
+        <Dropdown className="d-inline mx-2">
+          <Dropdown.Toggle
+            id="dropdown-autoclose-true"
+            style={{
+              backgroundColor: "transparent",
+              border: "none",
+              position: "relative",
+              top: 0,
+            }}
+          >
+            <Link to="/products" className="navbar-link">
+              Product
+            </Link>
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu>
+            <ul>
+              <Dropdown.Item href="#">
+                <li>Product1</li>
+              </Dropdown.Item>
+              <Dropdown.Item href="#">
+                <li>Product2</li>
+              </Dropdown.Item>
+              <Dropdown.Item href="#">
+                <li>Product3</li>
+              </Dropdown.Item>
+              <Dropdown.Item href="#">
+                <li>Product4</li>
+              </Dropdown.Item>
+              <Dropdown.Item href="#">
+                <li>Product5</li>
+              </Dropdown.Item>
+              <Dropdown.Item href="#">
+                <li>Product6</li>
+              </Dropdown.Item>
+              <Dropdown.Item href="#">
+                <li>Product7</li>
+              </Dropdown.Item>
+              <Dropdown.Item href="#">
+                <li>Product8</li>
+              </Dropdown.Item>
+              <Dropdown.Item href="#">
+                <li>Product9</li>
+              </Dropdown.Item>
+              <Dropdown.Item href="#">
+                <li>Product10</li>
+              </Dropdown.Item>
+            </ul>
+          </Dropdown.Menu>
+        </Dropdown>
+
+        <Dropdown className="d-inline mx-2">
+          <Dropdown.Toggle
+            id="dropdown-autoclose-true"
+            style={{
+              backgroundColor: "transparent",
+              border: "none",
+              position: "relative",
+              top: 0,
+            }}
+          >
+            {" "}
+            <Link to="/blog" className="navbar-link">
+              Blog
+            </Link>
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu>
+            <ul>
+              <Dropdown.Item href="#">
+                <li>Full width</li>
+              </Dropdown.Item>
+              <Dropdown.Item href="#">
+                <li>Blog post</li>
+              </Dropdown.Item>
+            </ul>
+          </Dropdown.Menu>
+        </Dropdown>
+
+        <Dropdown className="d-inline mx-2">
+          <Dropdown.Toggle
+            id="dropdown-autoclose-true"
+            style={{
+              backgroundColor: "transparent",
+              border: "none",
+              position: "relative",
+              top: 0,
+            }}
+          >
+            {" "}
+            <Link to="/pages" className="navbar-link">
+              Pages
+            </Link>
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu>
+            <Dropdown.Item href="#">
+              <li>404</li>
+            </Dropdown.Item>
+            <Dropdown.Item href="#">
+              <li>About</li>
+            </Dropdown.Item>
+            <Dropdown.Item href="#">
+              <li>Cart</li>
+            </Dropdown.Item>
+            <Dropdown.Item href="#">
+              <li>Checkout</li>
+            </Dropdown.Item>
+            <Dropdown.Item href="#">
+              <li>Order complete</li>
+            </Dropdown.Item>
+            <Dropdown.Item href="#">
+              <li>Contact</li>
+            </Dropdown.Item>
+            <Dropdown.Item href="#">
+              <li>Wish list</li>
+            </Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
+      </div>
+      <div className="navbar-languages">EN FR</div>
+      <div className="navbar-icons">
+        <AiOutlineSearch
+          className="navbar-searchBtn"
+          onClick={() => handleSearchClick()}
+        />
+
+        <Link to="/contact" className="navbar-link">
+          <AiOutlineUser />
+        </Link>
+
+        <Link to="/cart" className="navbar-link">
+          <AiOutlineShoppingCart />
+        </Link>
+      </div>
       <Search
         closeSearch={() => setOpenSearch(false)}
         openSearchState={openSearch}
       />
-    </div>
+    </nav>
   );
 };
 

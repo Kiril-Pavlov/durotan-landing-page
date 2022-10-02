@@ -30,6 +30,7 @@
   text-transform: uppercase;
   font-weight: 500;
   transition: all 0.5s;
+  background-color: transparent;
 }
 
 .navbar-link:hover {
@@ -49,4 +50,45 @@
 .navbar-searchBtn {
   position: relative;
   height: 100%;
+}
+.dropDownContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+}
+.homeDropdown-container {
+  padding: 50px;
+}
+.brands {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 40px;
+  flex-wrap: wrap;
+}
+.brands img {
+  object-fit: contain;
+}
+.shopImg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+}
+.shopDropdown-container {
+  display: flex;
+  flex-direction: row;
+
+  grid-gap: 20px;
+}
+
+h3 {
+  color: var(--gray-color);
+  font-weight: 300;
+  font-size: 1rem;
+  padding-bottom: 20px;
+}
+
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
 }
