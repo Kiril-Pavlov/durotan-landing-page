@@ -1,5 +1,55 @@
-.table {
+.main-cart-container{
+  background-color: white;
+  padding: 50px 15%;
+}
+
+.cart-title{
+  padding: 50px;
+  text-align: center;
+  font-family: var(--title-font);
+}
+
+.cart-container{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 5%;
+}
+
+
+.discount-table{
+  border: 1px solid gray;
+  padding: 24px;
+}
+
+.discount-table h3{
+  margin-bottom:20px
+
+}
+
+.input-container{
+  border: 1px solid gray;
+  padding: 6px;
+  display: grid;
+  grid-template-columns: 1fr 5fr 3fr;
+  justify-content: stretch;
+}
+
+.discount-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-container input:focus{
+  outline: none;
+}
+
+.apply{
+  background-color: transparent;
+  border: none;
+  color: black;
   position: relative;
+<<<<<<< HEAD
   left: 200px;
   top: 50px;
   width: 1000px;
@@ -7,4 +57,81 @@
 }
 .discount {
   border: 1px solid gray;
+=======
+  top: 0px;
+}
+
+.discount-table input{
+  border: none;
+}
+
+.cart-subcontainer-right{
+  background-color: rgb(238, 222, 222);
+  padding: 50px;
+}
+
+.cart-right-title{
+  font-size: 1.2rem;
+  padding-bottom: 12px;
+  border-bottom: 1px solid gray;
+}
+
+.subtotal{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px 0px;
+}
+
+.select-coupon{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 24px;
+}
+
+.total{
+  border-top: 1px solid gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px 0px;
+}
+
+.cart-checkout-button{
+  width: 100%;
+  margin-bottom: 24px;
+  position: relative;
+  top: 0px;
+}
+
+.payment-methods-text{
+  border-top: 1px solid gray;
+  padding: 12px 0px;
+}
+
+.continue-shopping-link{
+  margin: 50px;
+  text-align: center;
+  display: block;
+  color: black;
+  text-decoration: underline;
+}
+
+.continue-shopping-link:hover{
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width:992px){
+  .main-cart-container{
+    background-color: white;
+    padding: 30px 1%;
+  }
+  
+  .cart-container{
+    grid-template-columns: 1fr;
+    grid-gap: 2%;
+  }
+>>>>>>> 2e31db86a377973302771c02e47dd81994f648bd
 }
