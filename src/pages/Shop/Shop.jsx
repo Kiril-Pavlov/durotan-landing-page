@@ -20,6 +20,7 @@ import { useState } from 'react'
 
 const Shop = () => {
   const [displayView, setDisplayView] = useState("grid");
+  
 
   const handleDisplayGrid = () => {
     setDisplayView("grid")
