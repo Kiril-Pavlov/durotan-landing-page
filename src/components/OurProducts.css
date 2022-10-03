@@ -1,8 +1,39 @@
 .ourProducts {
   font-family: var(--title-font);
-  font-size: 3rem;
   padding-bottom: 30px;
-  margin-left: 6%;
+  margin-left: 11%;
   overflow: hidden;
   background-color: white;
+  font-size: 20px;
+}
+.productSections {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+}
+.ourProducts-title {
+  padding: 0px 0px 30px 0px;
+}
+.allProducts {
+  margin-right: 300px;
+}
+ul li:nth-child(n):hover {
+  color: black;
+}
+.image-carousel {
+  width: 300px;
+  height: 380px;
+}
+button {
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+button:active {
+  background-color: var(--primary-color);
+  width: 60px;
+}
+span {
+  visibility: hidden;
 }
