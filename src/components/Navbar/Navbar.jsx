@@ -7,6 +7,8 @@ import {
   AiOutlineUser,
   AiOutlineShoppingCart,
 } from "react-icons/ai";
+import {GiHamburgerMenu} from "react-icons/gi"
+
 import Dropdown from "react-bootstrap/Dropdown";
 import "./Navbar.css";
 import brandNameLogo from "..//../assets/brand-name-logo.png";
@@ -29,25 +31,12 @@ const Navbar = () => {
     setOpenSearch(true);
   }
 
-  {
-    /* <nav className="navbar-container">
-        
-        <div className="navbar-links">
-         
-   
-       
-         
-         
-        </div>
-       
-        </nav>
-     
-      {openCart && <Cart />}
-    */
-  }
 
   return (
     <nav className="navbar-container">
+      <div className="hamburger-button">
+        <GiHamburgerMenu />
+      </div>
       <div className="navbar-title">DUROTAN </div>
       <div className="navbar-links">
         <Dropdown className="d-inline mx-2 ">
@@ -500,15 +489,15 @@ const Navbar = () => {
       <div className="navbar-languages">EN FR</div>
       <div className="navbar-icons">
         <AiOutlineSearch
-          className="navbar-searchBtn"
+          
           onClick={() => handleSearchClick()}
         />
 
-        <Link to="/contact" className="navbar-link">
+        <Link to="/contact" className="navbar-icon-link">
           <AiOutlineUser />
         </Link>
 
-        <Link to="/cart" className="navbar-link">
+        <Link to="/cart" className="navbar-icon-link">
           <AiOutlineShoppingCart />
         </Link>
       </div>
