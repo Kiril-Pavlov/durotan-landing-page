@@ -13,6 +13,7 @@ import { Route, Routes, Navigate } from "react-router";
 import Search from "./components/Search/Search";
 
 function App() {
+ 
   return (
     <div className="App">
       <Navbar />

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Card, CardGroup, Img } from "react-bootstrap";
+
 import "./Product.css";
 import prva from "../../assets/prva.webp";
 import vtora from "../../assets/vtora.webp";
@@ -13,7 +14,6 @@ import shop2 from "../../assets/shop2.webp";
 import shop3 from "../../assets/shop3.webp";
 import shop4 from "../../assets/shop4.webp";
 import shop5 from "../../assets/shop5.webp";
-
 import { BsHeart } from "react-icons/bs";
 import { IoIosGitCompare } from "react-icons/io";
 import { RiTShirt2Line } from "react-icons/ri";
@@ -168,7 +168,7 @@ const Products = () => {
               <button>+</button>
             </div>
             <div>
-              <button className="cart">ADD TO CART</button>
+              {/* <button className="cart" onClick={addToCart}>ADD TO CART</button> */}
             </div>
           </div>
           <button style={{ width: "100%", position: "relative", top: "0px" }}>
@@ -267,6 +267,7 @@ const Products = () => {
           })}
         </div>
       </div>
+ 
     </div>
   );
 };
