@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+### Durotan Site Clone Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 
 
-## Available Scripts
+> Clone a website design for a Bookmark App.
 
-In the project directory, you can run:
+![screenshot](https://github.com/Kiril-Pavlov/react-durotan-website/blob/main/Screenshot_Durotan.png?raw=true)
 
-### `npm start`
+We cloned a given design of a website for a online shop for clothes.
+<======= add description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Built With
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+HTML5
+CSS3
+JavaScript
+React.js
+react-router-dom
+react-icons
+Bootstrap
+<----------add carousel
 
-### `npm test`
+## Live Demo
+<----------update link
+[Live Demo Link](https://bookmark-clone-site.netlify.app/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To get a local copy up and running follow these simple example steps.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
+You need npm to be installed on your local machine. For details please use the following site :https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Setup
+Next you need to clone the repository on your local machine with the following command line: 
+git clone https://github.com/Kiril-Pavlov/bookmark-landing-page.git
 
-### `npm run eject`
+### Install
+To install the project you need to enter the directory you've cloned. Open a terminal and follow these next steps:
+npm install (to install all the necessary modules and dependencies);
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Usage
+To run this project localy simply run the following line:
+npm start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+And the project should be deployed on your machine and you can access it on a browser by default on the URL: localhost:3000
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Authors
 
-## Learn More
+👤 **Kiril Pavlov**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- GitHub: [@Kiril-Pavlov](https://github.com/Kiril-Pavlov)
+- Website: [pavlov.mk](https://pavlov.mk)
+- LinkedIn: [kiril-pavlov](https://www.linkedin.com/in/kiril-pavlov/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+👤 **Tamara Ackovska**
 
-### Code Splitting
+- GitHub: [@atletisimo](https://github.com/atletisimo)
+- LinkedIn: [Tamara A.](https://www.linkedin.com/in/tamara-a-6a0b70150/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🤝 Contributing
 
-### Analyzing the Bundle Size
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Show your support
 
-### Making a Progressive Web App
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Acknowledgments
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- SMX Academy
