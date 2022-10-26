@@ -2,21 +2,14 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Cart from "../../pages/Cart/Cart";
 import Search from "../Search/Search";
-<<<<<<< HEAD
-=======
 import Accordion from "../Acordion";
->>>>>>> cd7d371ebc44a3e4dc6dd995b58c042acdbfc852
 
 import {
   AiOutlineSearch,
   AiOutlineUser,
   AiOutlineShoppingCart,
 } from "react-icons/ai";
-<<<<<<< HEAD
-import { GiHamburgerMenu } from "react-icons/gi";
-=======
 import { GiHamburgerMenu } from "react-icons/gi"
->>>>>>> cd7d371ebc44a3e4dc6dd995b58c042acdbfc852
 
 import Dropdown from "react-bootstrap/Dropdown";
 import "./Navbar.css";
@@ -43,51 +36,7 @@ const Navbar = () => {
 
   const handleOpenHamburger = () => {
     setIsHamburgerOpen(!isHamburgerOpen);
-<<<<<<< HEAD
-  };
-
-  let homeList = ` 
-    <ul>
-      <li>Home Page 1</li>
-      <li>Home Page 2</li>
-      <li>Home Page 3</li>
-      <li>Home Page 4</li>
-      <li>Home Page 5</li>
-      <li>Home Page 6</li>
-      <li>Home Page 7</li>
-      <li>Home Page 8</li>
-      <li>Home Page 9</li>
-      <li>Home Page 10</li>
-    </ul>
-  `;
-  let shopList = `
-  <ul>
-    <li>Shop Page</li>
-    <li>Shop Details</li>
-    <li>Cart Page</li> 
-  </ul>
-  `;
-
-  let pagesList = `
-  <ul>
-    <li>404 Page</li>
-    <li>About</li>
-    <li>Cart</li> 
-    <li>Checkout</li> 
-    <li>Contact</li> 
-    <li>Wishlist</li> 
-  </ul>
-  `;
-
-  let newsList = `
-  <ul>
-    <li>Blog</li>
-    <li>Blog Single</li> 
-  </ul>
-  `;
-=======
   }
->>>>>>> cd7d371ebc44a3e4dc6dd995b58c042acdbfc852
 
   let homeList = ` 
     <ul>
@@ -586,13 +535,9 @@ const Navbar = () => {
       </div>
       <div className="navbar-languages">EN FR</div>
       <div className="navbar-icons">
-<<<<<<< HEAD
-        <AiOutlineSearch onClick={() => handleSearchClick()} />
-=======
         <AiOutlineSearch
           onClick={() => handleSearchClick()}
         />
->>>>>>> cd7d371ebc44a3e4dc6dd995b58c042acdbfc852
 
         <Link to="/contact" className="navbar-icon-link">
           <AiOutlineUser />
@@ -607,32 +552,17 @@ const Navbar = () => {
         openSearchState={openSearch}
       />
       {/* "navbar-list navbar-list-active" */}
-<<<<<<< HEAD
-      <div
-        className={
-          isHamburgerOpen === true
-            ? "navbar-list navbar-list-active"
-            : "navbar-list"
-        }
-      >
-        <div className="navbar-list-left" onClick={handleOpenHamburger}></div>
-=======
       <div className={isHamburgerOpen === true ? "navbar-list navbar-list-active" : "navbar-list"}>
         <div className="navbar-list-left" onClick={handleOpenHamburger}>
 
         </div>
->>>>>>> cd7d371ebc44a3e4dc6dd995b58c042acdbfc852
         <div className="navbar-list-right">
           <div className="close-navbar-list-btn" onClick={handleOpenHamburger}>
             X
           </div>
           <h2 className="navbar-list-title">DUROTAN</h2>
           <div>
-<<<<<<< HEAD
-            <Accordion title="HOME" content={homeList} />
-=======
             <Accordion title="HOME" content={homeList}/>
->>>>>>> cd7d371ebc44a3e4dc6dd995b58c042acdbfc852
             <Accordion title="ABOUT" content="" />
             <Accordion title="SHOP" content={shopList} />
             <Accordion title="PAGES" content={pagesList} />
