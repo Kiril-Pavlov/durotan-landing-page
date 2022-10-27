@@ -65,6 +65,8 @@
     padding: 20px;
     font-weight: 500;
     border: none;
+    position: relative;
+    top: 0px;
 }
 
 .carousel-3-button{

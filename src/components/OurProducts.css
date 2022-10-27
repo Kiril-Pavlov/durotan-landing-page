@@ -1,29 +1,11 @@
-.ourProducts {
+.our-products-container {
   font-family: var(--title-font);
-  padding-bottom: 30px;
-  margin-left: 11%;
-  overflow: hidden;
-  background-color: white;
-  font-size: 20px;
+  padding: 50px 0px;
 }
-.productSections {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 10px;
-}
-.ourProducts-title {
-  padding: 0px 0px 30px 0px;
-}
-.allProducts {
-  margin-right: 300px;
-}
-ul li:nth-child(n):hover {
-  color: black;
-}
-.image-carousel {
-  width: 300px;
-  height: 380px;
+
+.our-products-title{
+  font-size: 3rem;
+  padding: 30px 6%;
 }
 /* button {
   background-color: transparent;
@@ -37,3 +19,11 @@ button:active {
 span {
   visibility: hidden;
 } */
+
+.our-products-carousel-item{
+  width: 350px;
+}
+
+.our-products-carousel{
+  padding: 30px 3%;
+}

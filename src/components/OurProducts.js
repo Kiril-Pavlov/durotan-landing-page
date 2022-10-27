@@ -9,11 +9,50 @@ import slika4 from "../assets/search4.jpg";
 import slika5 from "../assets/slider-2-image.png";
 import slika6 from "../assets/cart1.jpg"
 import { Carousel } from "react-bootstrap";
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
 
 const OurProducts = () => {
+  const handleDragStart = (e) => e.preventDefault();
+
+  const responsive = {
+    0: { items: 1 },
+    568: { items: 2 },
+    1024: { items: 4 },
+  };
+
+  const items = [
+    // <img src={scarf} onDragStart={handleDragStart} role="presentation" className="our-products-carousel-item" />,
+    <img src={gray} onDragStart={handleDragStart} role="presentation" className="our-products-carousel-item" />,
+    <img src={green} onDragStart={handleDragStart} role="presentation" className="our-products-carousel-item" />,
+    <img src={prva} onDragStart={handleDragStart} role="presentation" className="our-products-carousel-item" />,
+    <img src={slika3} onDragStart={handleDragStart} role="presentation" className="our-products-carousel-item" />,
+    <img src={slika4} onDragStart={handleDragStart} role="presentation" className="our-products-carousel-item" />,
+    <img src={slika6} onDragStart={handleDragStart} role="presentation" className="our-products-carousel-item" />,
+  ];
+
   return (
-    <div className="ourProducts" style={{ padding: "100px 80px" }}>
-      <h2 className="ourProducts-title">Our Products</h2>
+    <div className="our-products-container">
+      <h2 className="our-products-title">Our Products</h2>
+      <div className="productSections">
+        <ul className="blogSearch">
+          <li style={{ fontWeight: "bold" }}>BEST SELLING</li>
+          <li>NEW ARRIVALS</li>
+          <li>EDITOR`S PICK</li>
+        </ul>
+        <div className="allProducts">VIEW ALL PRODUCTS </div>
+      </div>
+      <div className="our-products-carousel">
+        <AliceCarousel
+          mouseTracking
+          items={items}
+          responsive={responsive}
+          controlsStrategy="alternate"
+          autoWidth={true}
+          infinite
+        />
+      </div>
+      {/* <h2 className="ourProducts-title">Our Products</h2>
 
       <div className="productSections">
         <ul className="blogSearch">
@@ -48,7 +87,8 @@ const OurProducts = () => {
           <img src={slika4} alt="Third slide"  className='image-carousel'/>
           <img src={slika6} alt="Third slide"  className='image-carousel'/>
         </Carousel.Item>
-      </Carousel>
+      </Carousel> */}
+
     </div>
   );
 };
