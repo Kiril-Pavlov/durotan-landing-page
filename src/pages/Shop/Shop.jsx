@@ -116,7 +116,7 @@ const Shop = () => {
       <p>6 Products found</p>
 
       {displayView === "grid" ? (
-        <div className='grid-products-container'>
+        <div className='shop-grid-products-container'>
           {productList.map((item) => {
             return (
               <div className='grid-product-card'>

@@ -69,10 +69,10 @@
 
 /* grid display view */
 
-.grid-products-container{
+.shop-grid-products-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 3%;
+    grid-gap: 10px;
 }
 
 .grid-product-card img{
@@ -214,7 +214,7 @@
         display: none;
     }
 
-    .grid-products-container{
+    .shop-grid-products-container{
         grid-template-columns: repeat(2,1fr);
     }
 
