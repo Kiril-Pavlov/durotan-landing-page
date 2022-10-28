@@ -22,7 +22,6 @@
 .card-group {
   display: flex;
   flex-direction: column;
-  width: 120px;
 }
 .original {
   width: 100%;
@@ -212,4 +211,32 @@
 }
 .reviewProducts {
   background-color: rgb(225, 219, 219);
+}
+
+@media screen and (max-width:992px){
+  .selectProductDetails {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding-bottom: 20px;
+  }
+
+  .leftPart {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 10px;
+  }
+
+  .product-links {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding: 20px 10px;
+  }
+  .product-container {
+    background-color: white;
+    padding: 0px 6%;
+  }
+  .prevNext {
+    display: none;
+  }
 }

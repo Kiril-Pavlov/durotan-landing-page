@@ -68,7 +68,7 @@ const Products = () => {
       <div className="product-links">
         <Link to="/">HOME</Link>
         <div className="justProduct">/ PRODUCT</div>
-        <p>/ SIMPLE TEXT FOR NAME PRODUCT</p>
+        <p>/ SIMPLE TEXT FOR NAME</p>
       </div>
       <div className="prevNext">
         <div className="prev">PREV</div>
