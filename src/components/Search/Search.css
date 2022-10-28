@@ -43,15 +43,15 @@
   font-family: var(--title-font);
   font-size: 1.5rem;
 }
-.cardItem {
+/* .cardItem {
   width: 250px;
-}
+} */
 .cardItem img {
   width: 100%;
 }
 .cards-container {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
   padding: 20px 0px;
 }
@@ -73,4 +73,20 @@
 .popUpBtn:hover {
   background-color: black;
   color: white;
+}
+
+@media screen and (max-width:992px){
+  .searchPopUp {
+    padding: 20px 50px;
+  }
+  .search {
+    grid-gap: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 10px 0px;
+  }
 }
