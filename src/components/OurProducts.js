@@ -34,7 +34,7 @@ const OurProducts = () => {
   return (
     <div className="our-products-container">
       <h2 className="our-products-title">Our Products</h2>
-      <div className="productSections">
+      <div className="our-products-links">
         <ul className="blogSearch">
           <li style={{ fontWeight: "bold" }}>BEST SELLING</li>
           <li>NEW ARRIVALS</li>
