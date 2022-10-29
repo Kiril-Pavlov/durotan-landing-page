@@ -2,9 +2,9 @@
 
 # 
 
-> Clone a website design for a Bookmark App.
+> Clone a website design for a Durotan Clothes Online Shop.
 
-![screenshot](https://github.com/Kiril-Pavlov/react-durotan-website/blob/main/Screenshot_Durotan.png?raw=true)
+![screenshot](https://github.com/Kiril-Pavlov/react-durotan-website/blob/main/durotan-screenshot.png?raw=true)
 
 We cloned a given design of a website for a online shop for clothes.
 <======= add description
@@ -18,11 +18,10 @@ React.js
 react-router-dom
 react-icons
 Bootstrap
-<----------add carousel
+react-alice-carousel
 
 ## Live Demo
-<----------update link
-[Live Demo Link](https://bookmark-clone-site.netlify.app/)
+[Live Demo Link](https://durotan-clone-site.netlify.app/)
 
 
 ## Getting Started
