@@ -33,7 +33,7 @@ You need npm to be installed on your local machine. For details please use the f
 
 ### Setup
 Next you need to clone the repository on your local machine with the following command line: 
-git clone https://github.com/Kiril-Pavlov/bookmark-landing-page.git
+git clone https://github.com/Kiril-Pavlov/react-durotan-website.git
 
 ### Install
 To install the project you need to enter the directory you've cloned. Open a terminal and follow these next steps:
