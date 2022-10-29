@@ -11,14 +11,14 @@ We cloned a given design of a website for a online shop for clothes.
 
 ## Built With
 
-HTML5
-CSS3
-JavaScript
-React.js
-react-router-dom
-react-icons
-Bootstrap
-react-alice-carousel
+- HTML5
+- CSS3
+- JavaScript
+- React.js
+- react-router-dom
+- react-icons
+- Bootstrap
+- react-alice-carousel
 
 ## Live Demo
 [Live Demo Link](https://durotan-clone-site.netlify.app/)
