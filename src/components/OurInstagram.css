@@ -1,5 +1,5 @@
 .instagram-container{
-  margin: 100px 15%;
+  margin: 100px 15% 0px 15%;
   border-top: 1px solid var(--primary-color);
 }
 
@@ -12,6 +12,10 @@
 .instagram-container a {
   color: black;
   font-weight: 500;
+}
+
+.instagram-container p {
+  text-align: left;
 }
 
 .instagram-container a:hover{
@@ -27,22 +31,19 @@
 
 .instagram-image{
   position: relative;
-  display: flex;
-  max-width: max-content;
+  height: 226px;
+  overflow: hidden;
 }
 
 
 .instagram-image img{
   position: relative;
-  z-index: 10;
 }
 
 .instagram-image img:hover{
   position: relative;
-  z-index: 1;
+  cursor: pointer;
 }
-
-
 
 .instagram-hover{
   width: 226px;
@@ -54,13 +55,13 @@
   justify-content: center;
   font-size: 50px;
   position: absolute;
-  top: 0px;
-  z-index: 5;
 }
 
-.insta-icon{
-  padding: 100%;
+.instagram-image:hover .instagram-hover{
+  top: 0px;
 }
+
+
 
 @media screen and (max-width:992px) {
   .instagram-container{

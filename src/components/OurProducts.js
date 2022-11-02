@@ -31,6 +31,8 @@ const OurProducts = () => {
     <img src={slika6} onDragStart={handleDragStart} role="presentation" className="our-products-carousel-item" />,
   ];
 
+
+
   return (
     <div className="our-products-container">
       <h2 className="our-products-title">Our Products</h2>
