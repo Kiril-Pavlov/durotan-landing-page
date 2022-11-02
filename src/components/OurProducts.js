@@ -48,7 +48,7 @@ const OurProducts = () => {
           items={items}
           responsive={responsive}
           controlsStrategy="alternate"
-          autoWidth={true}
+          autoWidth={false}
           infinite
         />
       </div>

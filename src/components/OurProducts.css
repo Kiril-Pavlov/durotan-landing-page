@@ -5,11 +5,11 @@
 
 .our-products-title{
   font-size: 3rem;
-  padding: 30px 6%;
+  padding: 30px 8%;
 }
 
 .our-products-links{
-  padding: 10px 6%;
+  padding: 10px 8%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -28,11 +28,11 @@ span {
 } */
 
 .our-products-carousel-item{
-  width: 350px;
+  width: 380px;
 }
 
 .our-products-carousel{
-  padding: 30px 3%;
+  padding: 30px 6%;
 }
 
 @media screen and (max-width:992px){
