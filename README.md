@@ -2,27 +2,26 @@
 
 # 
 
-> Clone a website design for a Bookmark App.
+> Clone a website design for a Durotan Clothes Online Shop.
 
-![screenshot](https://github.com/Kiril-Pavlov/react-durotan-website/blob/main/Screenshot_Durotan.png?raw=true)
+![screenshot](https://github.com/Kiril-Pavlov/react-durotan-website/blob/main/durotan-screenshot.png?raw=true)
 
 We cloned a given design of a website for a online shop for clothes.
 <======= add description
 
 ## Built With
 
-HTML5
-CSS3
-JavaScript
-React.js
-react-router-dom
-react-icons
-Bootstrap
-<----------add carousel
+- HTML5
+- CSS3
+- JavaScript
+- React.js
+- react-router-dom
+- react-icons
+- Bootstrap
+- react-alice-carousel
 
 ## Live Demo
-<----------update link
-[Live Demo Link](https://bookmark-clone-site.netlify.app/)
+[Live Demo Link](https://durotan-clone-site.netlify.app/)
 
 
 ## Getting Started
@@ -34,7 +33,7 @@ You need npm to be installed on your local machine. For details please use the f
 
 ### Setup
 Next you need to clone the repository on your local machine with the following command line: 
-git clone https://github.com/Kiril-Pavlov/bookmark-landing-page.git
+git clone https://github.com/Kiril-Pavlov/react-durotan-website.git
 
 ### Install
 To install the project you need to enter the directory you've cloned. Open a terminal and follow these next steps:
