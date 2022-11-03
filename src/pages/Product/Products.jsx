@@ -12,14 +12,14 @@ import outfit2 from "../../assets/outfit2.jpg";
 import shop1 from "../../assets/shop1.webp";
 import shop2 from "../../assets/shop2.webp";
 import shop3 from "../../assets/shop3.webp";
-import shop4 from "../../assets/shop4.webp";
-import shop5 from "../../assets/shop5.webp";
 import { BsHeart } from "react-icons/bs";
 import { IoIosGitCompare } from "react-icons/io";
 import { RiTShirt2Line } from "react-icons/ri";
 import { FiTwitter, FiFacebook, FiInstagram } from "react-icons/fi";
 const Products = () => {
   const [imageChange, setImageChange] = useState("first");
+  const [counter,setCounter] = useState(1);
+
   function changeImage1() {
     setImageChange("first");
   }
@@ -32,6 +32,22 @@ const Products = () => {
   function changeImage4() {
     setImageChange("forth");
   }
+
+  const decreaseCounter = () => {
+    if(counter<=1){
+      setCounter(1);
+    }
+    if(counter>1){
+      setCounter(counter-1);
+    }
+  }
+
+  const increaseCounter= () => {
+    console.log(counter)
+    setCounter(counter+1)
+    console.log("after ",counter)
+  }
+
   const productList = [
     {
       img: shop1,
@@ -163,9 +179,9 @@ const Products = () => {
           </select>
           <div className="qnt">
             <div className="counter">
-              <button>-</button>
-              <input type="text" value="1"></input>
-              <button>+</button>
+              <button onClick={decreaseCounter}>-</button>
+              <div style={{width:"100%",textAlign:"center"}}>{counter}</div>
+              <button onClick={increaseCounter}>+</button>
             </div>
             <div>
               {/* <button className="cart" onClick={addToCart}>ADD TO CART</button> */}
