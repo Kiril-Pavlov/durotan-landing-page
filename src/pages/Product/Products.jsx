@@ -95,7 +95,7 @@ const Products = () => {
           <CardGroup className="card-group">
             <Card>
               <Card.Img
-                className="defaultImg first"
+                className={imageChange==="first" ? "defaultImg first":"hoverMe first"}
                 onClick={changeImage1}
                 variant="top"
                 src={prva}
@@ -104,7 +104,7 @@ const Products = () => {
 
             <Card>
               <Card.Img
-                className="hoverMe second"
+                className={imageChange==="second" ? "defaultImg second":"hoverMe second"}
                 onClick={changeImage2}
                 variant="top"
                 src={vtora}
@@ -113,7 +113,7 @@ const Products = () => {
 
             <Card>
               <Card.Img
-                className="hoverMe third"
+                className={imageChange==="third" ? "defaultImg third":"hoverMe third"}
                 onClick={changeImage3}
                 variant="top"
                 src={treta}
@@ -121,7 +121,7 @@ const Products = () => {
             </Card>
             <Card>
               <Card.Img
-                className="hoverMe forth"
+                className={imageChange==="forth" ? "defaultImg forth":"hoverMe forth"}
                 onClick={changeImage4}
                 variant="top"
                 src={cetvrta}
