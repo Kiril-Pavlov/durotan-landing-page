@@ -258,7 +258,7 @@ const Products = () => {
                 <div className="grid-product-img">
                   <img className="imgItem" src={item.img} alt={item.name} />
                 </div>
-                <h3>{item.name}</h3>
+                <h3 className="related-products-title">{item.name}</h3>
                 <div className="discount">{item.discount}</div>
                 <div className="price">{item.price}</div>
               </div>
@@ -275,7 +275,7 @@ const Products = () => {
                 <div className="grid-product-img">
                   <img className="imgItem" src={item.img} alt={item.name} />
                 </div>
-                <h3>{item.name}</h3>
+                <h3 className="related-products-title">{item.name}</h3>
 
                 <div className="pricee">{item.price}</div>
               </div>

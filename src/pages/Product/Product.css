@@ -196,6 +196,8 @@
 .grid-products-container {
   display: flex;
   flex-direction: row;
+  grid-gap: 20px;
+  padding-bottom: 30px;
 }
 
 .grid-product-card:nth-child(odd) .price {
@@ -209,8 +211,13 @@
 .grid-product-card:nth-child(even) .discount {
   border: none;
 }
-.reviewProducts {
-  background-color: rgb(225, 219, 219);
+.reviewProducts .relatedProducts {
+  padding: 40px 0px;
+}
+
+.related-products-title{
+  padding: 5px 0px;
+  margin: 0px;
 }
 
 @media screen and (max-width:992px){
