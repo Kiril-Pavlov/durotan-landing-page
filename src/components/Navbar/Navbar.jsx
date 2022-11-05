@@ -564,7 +564,7 @@ const Navbar = () => {
           <div>
             <Accordion title="HOME" route="/" content={homeList}/>
             <Accordion title="SHOP" route="/shop" content="" />
-            <Accordion title="PRODUCT" route="/product" content={shopList} />
+            <Accordion title="PRODUCT" route="/products" content={shopList} />
             <Accordion title="BLOG" route="/blog" content={pagesList} />
             <Accordion title="PAGES" route="/pages" content={newsList} />
           </div>
