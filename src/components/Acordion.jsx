@@ -1,4 +1,5 @@
 import React, {useState, useRef } from 'react'
+import { Link } from 'react-router-dom';
 import "./Acordion.css"
 
 const Accordion = (props) => {
@@ -18,7 +19,11 @@ const Accordion = (props) => {
   return (
     <div className="accordion__section">
         <div className={`accordion ${setActive}`} onClick={toggleAccordion}>
-          <p className="accordion__title">{props.title}</p>
+          <p className="accordion__title">
+            <Link to={props.route} className="hamburger-main-link">
+              {props.title}
+            </Link>
+          </p>
           <svg className={`${setRotate}`} 
                     xmlns="http://www.w3.org/2000/svg" 
                     viewBox="0 0 448 512" 

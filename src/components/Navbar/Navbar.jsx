@@ -562,11 +562,11 @@ const Navbar = () => {
           </div>
           <h2 className="navbar-list-title">DUROTAN</h2>
           <div>
-            <Accordion title="HOME" content={homeList}/>
-            <Accordion title="ABOUT" content="" />
-            <Accordion title="SHOP" content={shopList} />
-            <Accordion title="PAGES" content={pagesList} />
-            <Accordion title="NEWS" content={newsList} />
+            <Accordion title="HOME" route="/" content={homeList}/>
+            <Accordion title="SHOP" route="/shop" content="" />
+            <Accordion title="PRODUCT" route="/product" content={shopList} />
+            <Accordion title="BLOG" route="/blog" content={pagesList} />
+            <Accordion title="PAGES" route="/pages" content={newsList} />
           </div>
         </div>
       </div>
